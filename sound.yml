@@ -1,0 +1,11 @@
+---
+- name: sound on and off
+  hosts: localhost
+  user: user1000
+  tasks:
+  - name: sound on
+    command: afplay hero.aiff
+    with_sequence: count=4
+    
+   
+    
